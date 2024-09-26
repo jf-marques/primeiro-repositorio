@@ -14,6 +14,12 @@ jobs:
         run: | # pode ser executado um comando direto ou coloca-se um pipe e vários comandos abaixo
           echo "Você criou o seu primeiro workflow!!!"
           echo "Parabéns!!!"
+      - name: "Script Python"
+        run: |
+          variavel = "Hello World!!!"
+          print(variavel)
+        shell: python
+          
 
 
 
