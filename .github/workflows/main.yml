@@ -25,6 +25,12 @@ jobs:
     steps:
       - name: "Verificação da versão do NodeJS atual"
         run: node --version
+      - name: "Definindo verão específica (22.9.0) do NodeJS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.9.0'
+      - name: "Verificação da versão do NodeJS depois de especificar"
+        run: node --version
           
 
 
